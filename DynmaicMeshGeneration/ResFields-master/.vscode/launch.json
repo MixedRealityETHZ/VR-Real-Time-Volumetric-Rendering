@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "ResFields",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "method": "tnerf",
+                "sequence": "basketball"
+            },
+            "program": "${workspaceFolder}/dyrecon/launch.py",
+            "args":["--config",
+                    "${workspaceFolder}/dyrecon/configs/dysdf/tnerf.yaml",
+                    "dataset.scene=basketball",
+                    "--exp_dir",
+                    "${workspaceFolder}/exp_owlii_benchmark",
+                    "--test",
+                    "model.sdf_net.resfield_layers=[1,2,3,4,5,6,7]",
+                    "--model_ckpt",
+                    "${workspaceFolder}/exp_owlii_benchmark/dysdf/basketball/tnerfResFields1234567/ckpt/last.ckpt"
+            ],
+            "cwd": "${workspaceFolder}/dyrecon",
+        }
+    ]
+}
