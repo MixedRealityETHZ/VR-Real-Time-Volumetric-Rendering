@@ -1,6 +1,6 @@
 # Dynamic Mesh Rendering for Neural Implicit Representations
 This repo contains mesh generation for dynamic objects, mesh simplification and unity rendering example scene. The rendering targets Meta Oculus Quest 2, Unity Version: 2022.3.10f1.
-1. `DynamicMeshGeneration`: This is a modified version of [ResFields](https://github.com/markomih/ResFields) to enable the extractin of meshes with vertex colors.
+1. `DynamicMeshGeneration`: This is a modified version of [ResFields](https://github.com/markomih/ResFields) to enable the extraction of meshes with vertex colors of a dynamic scene from 2D input videos.
 
 2. `MeshProcessing`: Python script for Blender. The extracted raw mesh sequence with vertex color will be processed by Blender and transformed to simplified meshes and corresponding texture maps (diffuse map and normal map).
 
@@ -8,6 +8,7 @@ This repo contains mesh generation for dynamic objects, mesh simplification and 
     - The simplified mesh sequence, static mesh and background are put into one scene. There are also custom shaders and materials. 
     - Some C# scripts are used to perform scene complexity statistics, load mesh sequence, assign custom material to object sequence, and animate mesh sequence with user tunable speed.
 
+4. `DynamicRenderingGSScene`: We additionally provide unity rendering examples of Gaussian Splatting scene.
 
 
 | <img src="demo-scene\demo_scene_1.jpg" alt="DemoScene1" style="zoom: 30%;" /> | <img src="demo-scene\demo_scene_2.jpg" alt="DemoScene2" style="zoom: 33%;" /> |
@@ -19,10 +20,7 @@ To generate meshes of static objects or scenes, we recommend using following Neu
 - [Neuralangelo](https://github.com/NVlabs/neuralangelo)
 - [sdfstudio](https://github.com/autonomousvision/sdfstudio)
 
-For dynamic objects, we provide a modified version of [ResFields](https://github.com/markomih/ResFields) under [DynamicMeshGeneration](DynamicMeshGeneration).
-Modifications are made in the following files to enable the extraction of meshes that carry vertex color information:
-- [DynamicMeshGeneration/dyrecon/models/dysdf.py](DynamicMeshGeneration/dyrecon/models/dysdf.py)
-- [DynamicMeshGeneration/dyrecon/models/utils.py](DynamicMeshGeneration/dyrecon/models/utils.py)
+For dynamic objects, we provide a modified version of [ResFields](https://github.com/markomih/ResFields) under [DynamicMeshGeneration](DynamicMeshGeneration). These modifications are designed to facilitate the extraction of meshes that carry vertex colors.
 
 ## Mesh Processing
 ```
@@ -56,3 +54,6 @@ The unity project to render the simplified the mesh, our target platform is Meta
     - [Assets/DynamicRendering/Scripts](DynamicRendering/Assets/DynamicRendering/Scripts): script to animate mesh sequence, basic interaction to addjust the animation speed and basic UI display for mesh speed and FPS.
     - [Assets/DynamicRendering/Editor](DynamicRendering/Assets/DynamicRendering/Editor): Unity editor script. For scene complexity statistics, automatically import mesh sequence and apply custom material to all meshes in the sequence.
     - [Assets/DynamicRendering/Shaders](DynamicRendering/Assets/DynamicRendering/Shaders) and [Assets/DynamicRendering/Materials](DynamicRendering/Assets/DynamicRendering/Materials): Custom materials for vertex color only and shaders defined by shader graph.
+
+## Dynamic Rendering Gaussian Splatting Scene
+To render Gaussian Splatting scenes, we refer users to [DynamicRenderingGSScene/Readme.md](DynamicRenderingGSScene/Readme.md).

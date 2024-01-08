@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b71fae31e6c7d438e8566dc713e666, type: 3}
+  m_Name: Users-wpqlrhc-temp-point_cloud
+  m_EditorClassIdentifier: 
+  m_FormatVersion: 20231020
+  m_SplatCount: 6131954
+  m_BoundsMin: {x: -65.39524, y: -81.78042, z: -71.70593}
+  m_BoundsMax: {x: 54.87931, y: 14.772521, z: 96.944984}
+  m_DataHash:
+    serializedVersion: 2
+    Hash: 1790af8e2bf55238825cc66072bdb440
+  m_PosFormat: 1
+  m_ScaleFormat: 1
+  m_SHFormat: 2
+  m_ColorFormat: 1
+  m_PosData: {fileID: 4900000, guid: f5b0433c9e12e9b4da28f264d6692d11, type: 3}
+  m_ColorData: {fileID: 4900000, guid: 88729cdc556741144960b6f2539d7af6, type: 3}
+  m_OtherData: {fileID: 4900000, guid: 199ed3762be041d4882b4ca3ce57944b, type: 3}
+  m_SHData: {fileID: 4900000, guid: f7bda8f644a1c5d4c904e0b588bbc881, type: 3}
+  m_ChunkData: {fileID: 4900000, guid: 1f3821ee9e7d8304ab8d5eef7098942c, type: 3}
+  m_Cameras: []
