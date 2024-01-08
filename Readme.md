@@ -1,5 +1,11 @@
-# Dynamic Mesh Rendering for Neural Implicit Representations
-This repo contains mesh generation for dynamic objects, mesh simplification and unity rendering example scene. The rendering targets Meta Oculus Quest 2, Unity Version: 2022.3.10f1.
+# Real-Time Dynamic Rendering in VR
+A comprehensive pipeline for real-time rendering of dynamic scenes in VR.
+
+Creators: Jiayong Li (jiayli@student.ethz.ch), Kaixi Bao (kaibao@student.ethz.ch), Yuhang Qiu (yuhqiu@student.ethz.ch), Zehang Qiu (zehqiu@student.ethz.ch)
+
+Supervised by Marko Mihajlovic (marko.mihajlovic@inf.ethz.ch) and Sergey Prokudin (sergey.prokudin@inf.ethz.ch).
+
+This repo contains mesh generation for dynamic objects, mesh simplification and unity rendering example scenes. The rendering targets Meta Oculus Quest 2, Unity Version: 2022.3.10f1.
 1. `DynamicMeshGeneration`: This is a modified version of [ResFields](https://github.com/markomih/ResFields) to enable the extraction of meshes with vertex colors of a dynamic scene from 2D input videos.
 
 2. `MeshProcessing`: Python script for Blender. The extracted raw mesh sequence with vertex color will be processed by Blender and transformed to simplified meshes and corresponding texture maps (diffuse map and normal map).
